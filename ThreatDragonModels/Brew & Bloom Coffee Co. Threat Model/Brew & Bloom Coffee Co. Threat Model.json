@@ -510,7 +510,7 @@
           {
             "position": {
               "x": 360,
-              "y": 440
+              "y": 372.0000000000001
             },
             "size": {
               "width": 110,
@@ -948,53 +948,6 @@
             ]
           },
           {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "uses",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "uses"
-            ],
-            "id": "1d17095a-efb7-4227-9c90-d8176b34f3cc",
-            "source": {
-              "cell": "1a3456bf-2042-4edc-a929-18874746a7c1",
-              "port": "ddecbfca-5f8d-4d60-8d76-fffbab722821"
-            },
-            "target": {
-              "cell": "b41059a2-d303-4733-ac33-67948e136dd2",
-              "port": "bd08a798-537e-426a-9779-7370083e99c1"
-            },
-            "vertices": []
-          },
-          {
             "shape": "trust-boundary-curve",
             "width": 200,
             "height": 100,
@@ -1007,7 +960,8 @@
               "isTrustBoundary": true,
               "hasOpenThreats": false,
               "crossingFlows": [
-                "5a8df8b9-e647-40fc-9740-13c9639e45a0"
+                "5a8df8b9-e647-40fc-9740-13c9639e45a0",
+                "ea9cf1c9-3de5-41ad-8e62-5e9066b4f41a"
               ],
               "containedElements": [
                 "1db5e80d-ec13-470b-a140-2661222449f6"
@@ -1077,7 +1031,12 @@
               "cell": "09a23d0a-f4ae-4b1f-bdd9-560ade5d4b3a",
               "port": "f159455d-8295-492e-8177-a579f0ea3e20"
             },
-            "vertices": []
+            "vertices": [
+              {
+                "x": 200,
+                "y": 220
+              }
+            ]
           },
           {
             "shape": "flow",
@@ -1236,6 +1195,159 @@
                 "y": 300
               }
             ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "1.5",
+              "description": "If payment is successful, the Web Application Server records the new order details and payment status in the MongoDB Database.",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "a50928ea-6720-4d54-a4d7-e1aeaf823c79"
+              ]
+            },
+            "labels": [
+              "1.5"
+            ],
+            "id": "ea9cf1c9-3de5-41ad-8e62-5e9066b4f41a",
+            "source": {
+              "cell": "09a23d0a-f4ae-4b1f-bdd9-560ade5d4b3a",
+              "port": "661d9ce8-6d14-4c8f-a734-ff3fccfe3525"
+            },
+            "target": {
+              "cell": "1db5e80d-ec13-470b-a140-2661222449f6",
+              "port": "d0dafd5c-07dc-4bfe-bebb-5f5691f34f37"
+            },
+            "vertices": [
+              {
+                "x": 90,
+                "y": 30
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "1.7",
+              "description": "Web Application Server sends an order confirmation and status update back to the Customer.",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "1.7"
+            ],
+            "id": "eb4b3876-a5cb-465c-bd94-cab2d01fc37b",
+            "source": {
+              "cell": "09a23d0a-f4ae-4b1f-bdd9-560ade5d4b3a",
+              "port": "f159455d-8295-492e-8177-a579f0ea3e20"
+            },
+            "target": {
+              "cell": "b41059a2-d303-4733-ac33-67948e136dd2",
+              "port": "7cca9d84-2260-4298-9541-2618adcfcd73"
+            },
+            "vertices": [
+              {
+                "x": 190,
+                "y": 140
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "1.8",
+              "description": "Customer displays the order confirmation and updated order status.",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "1.8"
+            ],
+            "id": "3e37de63-97b6-4ad1-b829-12bb1e247f16",
+            "source": {
+              "cell": "1a3456bf-2042-4edc-a929-18874746a7c1",
+              "port": "ddecbfca-5f8d-4d60-8d76-fffbab722821"
+            },
+            "target": {
+              "cell": "b41059a2-d303-4733-ac33-67948e136dd2",
+              "port": "bd08a798-537e-426a-9779-7370083e99c1"
+            },
+            "vertices": []
           }
         ]
       }
