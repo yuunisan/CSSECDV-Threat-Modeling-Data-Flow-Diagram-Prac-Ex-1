@@ -26,8 +26,8 @@
         "cells": [
           {
             "position": {
-              "x": 290,
-              "y": 120
+              "x": -60,
+              "y": 170.0000000000001
             },
             "size": {
               "width": 150,
@@ -630,7 +630,7 @@
           },
           {
             "position": {
-              "x": 210,
+              "x": 340,
               "y": 170.0000000000001
             },
             "size": {
@@ -1353,28 +1353,30 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Boundary",
-              "name": "",
+              "name": "Trust Boundary",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false,
               "crossingFlows": [],
-              "containedElements": []
+              "containedElements": [
+                "1db5e80d-ec13-470b-a140-2661222449f6"
+              ]
             },
             "labels": [
-              ""
+              "Trust Boundary"
             ],
-            "id": "a50928ea-6720-4d54-a4d7-e1aeaf823c79",
+            "id": "e47d94e1-5d26-4013-895e-7d91b1218c6b",
             "source": {
-              "x": 50,
-              "y": -70
+              "x": 37,
+              "y": -50
             },
             "target": {
-              "x": 600,
+              "x": 660,
               "y": 60
             },
             "vertices": [
               {
-                "x": 280,
+                "x": 250,
                 "y": 60
               }
             ]
