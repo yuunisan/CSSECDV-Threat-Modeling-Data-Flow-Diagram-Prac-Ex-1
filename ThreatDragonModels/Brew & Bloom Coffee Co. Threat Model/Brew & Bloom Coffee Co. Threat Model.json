@@ -1358,9 +1358,7 @@
               "isTrustBoundary": true,
               "hasOpenThreats": false,
               "crossingFlows": [],
-              "containedElements": [
-                "1db5e80d-ec13-470b-a140-2661222449f6"
-              ]
+              "containedElements": []
             },
             "labels": [
               ""
