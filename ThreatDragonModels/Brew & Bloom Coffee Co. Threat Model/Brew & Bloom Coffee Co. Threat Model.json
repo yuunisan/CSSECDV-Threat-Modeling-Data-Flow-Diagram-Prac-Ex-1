@@ -1149,8 +1149,8 @@
           },
           {
             "position": {
-              "x": 752,
-              "y": 362.0000000000001
+              "x": -70,
+              "y": 372.0000000000001
             },
             "size": {
               "width": 110,
@@ -1357,8 +1357,12 @@
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false,
-              "crossingFlows": [],
-              "containedElements": []
+              "crossingFlows": [
+                "5a8df8b9-e647-40fc-9740-13c9639e45a0"
+              ],
+              "containedElements": [
+                "1db5e80d-ec13-470b-a140-2661222449f6"
+              ]
             },
             "labels": [
               ""
@@ -1376,6 +1380,211 @@
               {
                 "x": 280,
                 "y": 60
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "1.1",
+              "description": "Customer selects items, customizes them, and submits the order details to the Web Application Server",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "1.1"
+            ],
+            "id": "adebc22d-41e8-4113-bcc0-28205137e40c",
+            "source": {
+              "cell": "b41059a2-d303-4733-ac33-67948e136dd2",
+              "port": "7cca9d84-2260-4298-9541-2618adcfcd73"
+            },
+            "target": {
+              "cell": "09a23d0a-f4ae-4b1f-bdd9-560ade5d4b3a",
+              "port": "f159455d-8295-492e-8177-a579f0ea3e20"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "1.2",
+              "description": "Web Application Server receives the order details and performs input validation and business logic checks (e.g., item availability, valid customizations).",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "a50928ea-6720-4d54-a4d7-e1aeaf823c79"
+              ]
+            },
+            "labels": [
+              "1.2"
+            ],
+            "id": "5a8df8b9-e647-40fc-9740-13c9639e45a0",
+            "source": {
+              "cell": "09a23d0a-f4ae-4b1f-bdd9-560ade5d4b3a",
+              "port": "661d9ce8-6d14-4c8f-a734-ff3fccfe3525"
+            },
+            "target": {
+              "cell": "1db5e80d-ec13-470b-a140-2661222449f6",
+              "port": "9d9582ab-7841-4087-bf06-1583422ffc7e"
+            },
+            "vertices": [
+              {
+                "x": 250,
+                "y": 100
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "1.4",
+              "description": "Payment Gateway processes the payment and sends a transaction response (success/failure) back to the Web Application Server.",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "1.4"
+            ],
+            "id": "01d73b2c-5f0a-4835-bf7c-0ffaddf37037",
+            "source": {
+              "cell": "d16d33bc-7f11-4268-a434-d1a8fd7fa8a2",
+              "port": "ddecbfca-5f8d-4d60-8d76-fffbab722821"
+            },
+            "target": {
+              "cell": "09a23d0a-f4ae-4b1f-bdd9-560ade5d4b3a",
+              "port": "bd08a798-537e-426a-9779-7370083e99c1"
+            },
+            "vertices": [
+              {
+                "x": 50,
+                "y": 300
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "1.3",
+              "description": "Web Application Server initiates a payment request, sending tokenized payment information to the Payment Gateway (a Third-Party Service).",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "1.3"
+            ],
+            "id": "1b02924b-233d-4055-a2b7-9be52e3a9aa1",
+            "source": {
+              "cell": "09a23d0a-f4ae-4b1f-bdd9-560ade5d4b3a",
+              "port": "bd08a798-537e-426a-9779-7370083e99c1"
+            },
+            "target": {
+              "cell": "d16d33bc-7f11-4268-a434-d1a8fd7fa8a2",
+              "port": "ddecbfca-5f8d-4d60-8d76-fffbab722821"
+            },
+            "vertices": [
+              {
+                "x": -80,
+                "y": 300
               }
             ]
           }
