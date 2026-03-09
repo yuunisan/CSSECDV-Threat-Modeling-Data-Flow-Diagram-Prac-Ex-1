@@ -1380,36 +1380,9 @@
             ]
           }
         ]
-      },
-      {
-        "id": 1,
-        "title": "2. Barista Updates Order Status",
-        "diagramType": "STRIDE",
-        "placeholder": "New STRIDE diagram description",
-        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
-        "version": "2.6.0",
-        "cells": []
-      },
-      {
-        "id": 2,
-        "title": "3. Manager Accesses Basic Sales Reports",
-        "diagramType": "STRIDE",
-        "placeholder": "New STRIDE diagram description",
-        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
-        "version": "2.6.0",
-        "cells": []
-      },
-      {
-        "id": 3,
-        "title": "4. Administrator Adds New Menu Item",
-        "diagramType": "STRIDE",
-        "placeholder": "New STRIDE diagram description",
-        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
-        "version": "2.6.0",
-        "cells": []
       }
     ],
-    "diagramTop": 4,
+    "diagramTop": 5,
     "reviewer": "",
     "threatTop": 24
   }
