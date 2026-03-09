@@ -26,8 +26,8 @@
         "cells": [
           {
             "position": {
-              "x": -70,
-              "y": 100
+              "x": 290,
+              "y": 120
             },
             "size": {
               "width": 150,
@@ -350,8 +350,8 @@
           },
           {
             "position": {
-              "x": 420,
-              "y": -80
+              "x": 280,
+              "y": -50
             },
             "size": {
               "width": 140,
@@ -362,11 +362,13 @@
                 "text": "MongoDB Database"
               },
               "topLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -463,19 +465,52 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isALog": false,
               "isEncrypted": false,
               "isSigned": false,
               "storesCredentials": false,
               "storesInventory": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "ae0cc9f1-dd67-43c7-b152-e70678d12269",
+                  "title": "Menu Data Tampering",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "An attacker could alter menu item data (e.g., prices or descriptions) before it is stored in the database.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 23,
+                  "score": ""
+                },
+                {
+                  "id": "574895d6-dbec-4e3c-9dc7-7f7a9fabfbd7",
+                  "title": "Sales Report Tampering",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Unauthorized individuals could alter sales data in the MongoDB Database, leading to falsified reports.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 24,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 2,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
             }
           },
           {
             "position": {
-              "x": 590,
-              "y": 290.0000000000001
+              "x": 360,
+              "y": 440
             },
             "size": {
               "width": 110,
@@ -595,8 +630,8 @@
           },
           {
             "position": {
-              "x": 330,
-              "y": 90
+              "x": 210,
+              "y": 170.0000000000001
             },
             "size": {
               "width": 150,
@@ -1258,8 +1293,89 @@
             },
             "vertices": [
               {
-                "x": 160,
-                "y": 150
+                "x": 170,
+                "y": 20
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "uses",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "uses"
+            ],
+            "id": "1d17095a-efb7-4227-9c90-d8176b34f3cc",
+            "source": {
+              "cell": "1a3456bf-2042-4edc-a929-18874746a7c1",
+              "port": "ddecbfca-5f8d-4d60-8d76-fffbab722821"
+            },
+            "target": {
+              "cell": "b41059a2-d303-4733-ac33-67948e136dd2",
+              "port": "bd08a798-537e-426a-9779-7370083e99c1"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": []
+            },
+            "labels": [
+              ""
+            ],
+            "id": "a50928ea-6720-4d54-a4d7-e1aeaf823c79",
+            "source": {
+              "x": 50,
+              "y": -70
+            },
+            "target": {
+              "x": 600,
+              "y": 60
+            },
+            "vertices": [
+              {
+                "x": 280,
+                "y": 60
               }
             ]
           }
@@ -1295,6 +1411,6 @@
     ],
     "diagramTop": 4,
     "reviewer": "",
-    "threatTop": 22
+    "threatTop": 24
   }
 }
