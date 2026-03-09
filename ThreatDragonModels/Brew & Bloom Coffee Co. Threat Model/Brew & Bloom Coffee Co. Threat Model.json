@@ -960,8 +960,7 @@
               "isTrustBoundary": true,
               "hasOpenThreats": false,
               "crossingFlows": [
-                "5a8df8b9-e647-40fc-9740-13c9639e45a0",
-                "ea9cf1c9-3de5-41ad-8e62-5e9066b4f41a"
+                "5a8df8b9-e647-40fc-9740-13c9639e45a0"
               ],
               "containedElements": [
                 "1db5e80d-ec13-470b-a140-2661222449f6"
@@ -1227,9 +1226,7 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": [
-                "a50928ea-6720-4d54-a4d7-e1aeaf823c79"
-              ]
+              "trustBoundaryIds": []
             },
             "labels": [
               "1.5"
@@ -1323,7 +1320,7 @@
             "data": {
               "type": "tm.Flow",
               "name": "1.8",
-              "description": "Customer displays the order confirmation and updated order status.",
+              "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
