@@ -26,8 +26,8 @@
         "cells": [
           {
             "position": {
-              "x": 290,
-              "y": 120
+              "x": -90,
+              "y": 120.00000000000011
             },
             "size": {
               "width": 150,
@@ -45,6 +45,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -128,7 +129,6 @@
               ]
             },
             "id": "09a23d0a-f4ae-4b1f-bdd9-560ade5d4b3a",
-            "zIndex": 1,
             "data": {
               "type": "tm.Process",
               "name": "Web Server \nBackend",
@@ -374,6 +374,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -457,7 +458,6 @@
               ]
             },
             "id": "1db5e80d-ec13-470b-a140-2661222449f6",
-            "zIndex": 3,
             "data": {
               "type": "tm.Store",
               "name": "MongoDB Database",
@@ -528,6 +528,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -611,7 +612,6 @@
               ]
             },
             "id": "1a3456bf-2042-4edc-a929-18874746a7c1",
-            "zIndex": 4,
             "data": {
               "type": "tm.Actor",
               "name": "Customer",
@@ -630,8 +630,8 @@
           },
           {
             "position": {
-              "x": 210,
-              "y": 170.0000000000001
+              "x": 340,
+              "y": 120.00000000000011
             },
             "size": {
               "width": 150,
@@ -649,6 +649,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 5,
             "ports": {
               "groups": {
                 "top": {
@@ -793,8 +794,7 @@
                 "denialOfService": 0,
                 "elevationOfPrivilege": 0
               }
-            },
-            "zIndex": 5
+            }
           },
           {
             "position": {
@@ -817,6 +817,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 6,
             "ports": {
               "groups": {
                 "top": {
@@ -910,8 +911,7 @@
               "hasOpenThreats": false,
               "providesAuthentication": false,
               "threats": []
-            },
-            "zIndex": 6
+            }
           },
           {
             "position": {
@@ -934,6 +934,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 7,
             "ports": {
               "groups": {
                 "top": {
@@ -1027,8 +1028,7 @@
               "hasOpenThreats": false,
               "providesAuthentication": false,
               "threats": []
-            },
-            "zIndex": 7
+            }
           },
           {
             "position": {
@@ -1051,6 +1051,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 8,
             "ports": {
               "groups": {
                 "top": {
@@ -1144,8 +1145,7 @@
               "hasOpenThreats": false,
               "providesAuthentication": false,
               "threats": []
-            },
-            "zIndex": 8
+            }
           },
           {
             "position": {
@@ -1168,6 +1168,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 9,
             "ports": {
               "groups": {
                 "top": {
@@ -1261,8 +1262,7 @@
               "hasOpenThreats": false,
               "providesAuthentication": false,
               "threats": []
-            },
-            "zIndex": 9
+            }
           },
           {
             "shape": "trust-boundary-curve",
@@ -1358,7 +1358,9 @@
               "isTrustBoundary": true,
               "hasOpenThreats": false,
               "crossingFlows": [],
-              "containedElements": []
+              "containedElements": [
+                "1db5e80d-ec13-470b-a140-2661222449f6"
+              ]
             },
             "labels": [
               ""
